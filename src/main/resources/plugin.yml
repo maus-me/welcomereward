@@ -1,6 +1,6 @@
-name: WelcomeReward
+name: welcomereward
 version: '${project.version}'
-main: org.maus.welcomereward
+main: org.maus.welcomereward.welcomereward
 api-version: '1.20'
 load: STARTUP
 authors: [Mausterio]

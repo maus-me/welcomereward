@@ -6,8 +6,9 @@
 
   <groupId>org.maus</groupId>
   <artifactId>welcomereward</artifactId>
-  <version>1.0</version>
+  <version>1.0.1</version>
   <packaging>jar</packaging>
+
 
   <name>WelcomeReward</name>
 
@@ -17,6 +18,7 @@
   </properties>
 
   <build>
+      <finalName>${project.artifactId}-${project.version}</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -58,6 +60,10 @@
           <id>sonatype</id>
           <url>https://oss.sonatype.org/content/groups/public/</url>
       </repository>
+      <repository>
+          <id>jitpack.io</id>
+          <url>https://jitpack.io</url>
+      </repository>
   </repositories>
 
   <dependencies>
@@ -66,6 +72,11 @@
           <artifactId>spigot-api</artifactId>
           <version>1.20.4-R0.1-SNAPSHOT</version>
           <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>com.github.jonahseguin</groupId>
+          <artifactId>drink</artifactId>
+          <version>bb4458d9ce</version>
       </dependency>
   </dependencies>
 </project>

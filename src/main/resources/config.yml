@@ -1,0 +1,34 @@
+enabled: true # SET AS FALSE ONLY IF YOU WANT NOTHING TO WORK
+welcome:
+  acceptable-messages: # ALL MESSAGES THAT WILL BE PROCESSED, SET IN LOWERCASE
+    - 'welcome'
+    - 'wl'
+  join-messages: # MESSAGES WHEN A NEW PLAYER JOINS, KEEP AS BLANK IF YOU DONT WANT A MESSAGE
+    - '&6&lᴡᴇʟᴄᴏᴍᴇ &7-> &e%player% &7(&c#%num%&7) &fhas joined the &eServer!'
+    - "&fType &e'welcome' &fto receive &6rewards!"
+  time: 5 # AMOUNT OF TIME ALLOWED TO SAY WELCOME AFTER JOIN IN SECONDS
+  rewards:
+    messages: # MESSAGE AFTER WELCOMING PLAYER SUCCESSFULLY
+      - '&eThanks &ffor &ewelcoming &fthat player! &fYou have been given some &6Rewards!'
+    commands: # COMMANDS AFTER WELCOMING PLAYER SUCCESSFULLY
+      - 'money give %player% 1'
+  failed-messages: # FAILED MESSAGE
+    - '&cRewards not given.'
+    - '&cYou have already welcomed that player or you took too long.'
+  num-of-joins: 0 # DO NOT CHANGE UNLESS YOU WANT TO RESET
+ggwave:
+  acceptable-messages: # ACCEPTABLE MESSAGES DURING GG WAVE, SET IN LOWERCASE
+    - 'gg'
+    - 'ggs'
+  wave-messages: ## MESSAGES SENT WHEN A NEW GG WAVE GOES THROUGH
+    - "&6&lSTORE &7-> &e%name% &fhas &epurchased &fsomething on the store!"
+    - "&fType &e'gg' &fto receive &6rewards!"
+  time: 5 # AMOUNT OF TIME ALLOWED TO SAY GG AFTER WAVE STARTS IN SECONDS
+  rewards:
+    messages: # MESSAGE AFTER SAYING GG SUCCESSFULLY
+      - '&eThanks &ffor &econgratulating &fthat player! &fYou have been given some &6Rewards!'
+    commands: # COMMANDS AFTER SAYING GG SUCCESSFULLY
+      - 'money give %player% 1'
+  failed-messages: # FAILED MESSAGE
+    - '&cRewards not given.'
+    - '&cYou have already congratulated that player or you took too long.'
